@@ -1,3 +1,8 @@
+# Example of a Next.js app set up with Page UI
+See more on [Page UI](https://page-ui.dev/)
+
+---------
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

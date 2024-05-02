@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Syne } from 'next/font/google';
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const displayFont = Syne({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-space-display',
+});
+
+const baseFont = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-space-default',
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+     <body className={`${baseFont.variable} ${displayFont.variable} scroll-smooth`}>{children}</body>
     </html>
   );
 }
