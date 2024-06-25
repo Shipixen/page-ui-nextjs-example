@@ -6,10 +6,6 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --primary-lighter-hex: theme('colors.primary.200');
-  --secondary-lighter-hex: theme('colors.secondary.200');
-  --primary-dark-hex: theme('colors.primary.800');
-  --secondary-dark-hex: theme('colors.secondary.800');
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,6 +57,10 @@ body {
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --radius: 0.5rem;
+    --primary-lighter-hex: theme('colors.primary.200');
+    --secondary-lighter-hex: theme('colors.secondary.200');
+    --primary-dark-hex: theme('colors.primary.800');
+    --secondary-dark-hex: theme('colors.secondary.800');
   }
 
   .dark {
