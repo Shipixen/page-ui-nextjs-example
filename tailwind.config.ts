@@ -3,6 +3,7 @@ import { fontFamily } from 'tailwindcss/defaultTheme';
 import { colors } from './data/config/colors';
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -15,6 +16,7 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-space-default)', ...fontFamily.sans],
         display: ['var(--font-space-display)', ...fontFamily.sans],
+        cursive: ['cursive'],
       },
 
       colors: {
@@ -69,6 +71,21 @@ const config: Config = {
 
       screens: {
         '2xl': '1400px',
+      },
+
+      keyframes: {
+        marquee: {
+          '0%': {
+            transform: 'translateX(0)',
+          },
+          '100%': {
+            transform: 'translateX(-50%)',
+          },
+        },
+      },
+
+      animation: {
+        marquee: '30s marquee linear infinite',
       },
 
       backgroundImage: {
